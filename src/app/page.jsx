@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import HeroSection from "@/components/heroSection";
 import Feed from "@/components/Feed";
 import FeaturedMemesSection from "@/components/featuredMemesSection";
+import Categories from "@/components/categories";
 
 export default function Home() {
   const memes = [
@@ -102,6 +103,8 @@ export default function Home() {
             author={"SuperCoder"}
             authorAvatar={"https://i.pravatar.cc/150?img=20"}
           />
+
+          <Categories />
 
           <Feed memes={memes} />
 
