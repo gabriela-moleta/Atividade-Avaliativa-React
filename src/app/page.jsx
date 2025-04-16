@@ -5,6 +5,8 @@ import HeroSection from "@/components/heroSection";
 import Feed from "@/components/Feed";
 import FeaturedMemesSection from "@/components/featuredMemesSection";
 import Categories from "@/components/categories";
+import SideBar from "@/components/sideBar";
+import CardCompeticoes from "@/components/cardCompeticoes";
 
 export default function Home() {
   const memes = [
@@ -136,6 +138,18 @@ export default function Home() {
           </section>
 
         </div>
+        <SideBar>
+                <CardCompeticoes
+                    title={"Competições de Memes 2025"}
+                    date={"15 de Maio, 2025"}
+                    participants={356}
+                />
+                <CardCompeticoes
+                    title={"Workshop: Como Criar Memes Virais"}
+                    date={"22 de Maio, 2025"}
+                    participants={127}
+                />
+            </SideBar>
       </div>
 
       <Footer
