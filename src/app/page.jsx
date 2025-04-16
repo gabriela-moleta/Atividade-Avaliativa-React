@@ -7,6 +7,7 @@ import FeaturedMemesSection from "@/components/featuredMemesSection";
 import Categories from "@/components/categories";
 import SideBar from "@/components/sideBar";
 import CardCompeticoes from "@/components/cardCompeticoes";
+import NewsLetter from "@/components/newsLetter";
 
 export default function Home() {
   const memes = [
@@ -136,6 +137,8 @@ export default function Home() {
                 />
             </div>
           </section>
+
+          <NewsLetter />
 
         </div>
         <SideBar>
