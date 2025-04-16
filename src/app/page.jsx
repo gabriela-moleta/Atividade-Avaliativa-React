@@ -1,10 +1,22 @@
 import Footer from "@/components/footer";
 import styles from "./page.module.css";
+import Header from "@/components/header";
 
 export default function Home() {
 
   return (
     <div className={styles.container}>
+      <Header
+        logo="MemeVerse"
+        navItems={[
+          { label: "Início", href: "/", active: true },
+          { label: "Categorias", href: "/categories" },
+          { label: "Criar Meme", href: "/create" },
+          { label: "Eventos", href: "/events" },
+          { label: "Sobre", href: "/about" },
+        ]}
+      />
+
       <Footer
         footerData={[
           {
